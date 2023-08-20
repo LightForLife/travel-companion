@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/travel-companion/static/css/main.7acaea2f.css",
+    "main.js": "/travel-companion/static/js/main.07d3183d.js",
+    "index.html": "/travel-companion/index.html",
+    "main.7acaea2f.css.map": "/travel-companion/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/travel-companion/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
