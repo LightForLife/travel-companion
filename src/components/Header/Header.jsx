@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 // import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
+import { Autocomplete } from '@react-google-maps/api';
 // import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { Search, SearchIconWrapper, StyledInputBase } from './styles';
@@ -27,20 +27,38 @@ const Header = () => {
           <Typography
             variant="h6"
             noWrap
-            component="div"
+            // component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             Travel Advisor
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
+          <Box display="flex">
+            <Typography
+              variant="h6"
+              noWrap
+              // component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            >
+              Travel Advisor
+            </Typography>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              {/* <StyledInputBase
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+            /> */}
+              {/* <Autocomplete> */}
+              <div>
+                {/* <div>
+                <SearchIcon />
+              </div> */}
+                <StyledInputBase placeholder="Search…" />
+              </div>
+              {/* </Autocomplete> */}
+            </Search>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
